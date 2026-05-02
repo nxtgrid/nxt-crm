@@ -1,0 +1,22 @@
+@use '@nxt/styles/modules/variables' as *;
+
+.header-line {
+  display: flex;
+  color: $nxt-color-blue;
+  align-items: center;
+  column-gap: 8px;
+  
+  &::after {
+    content: '';
+    height: 1px;
+    flex: 1;
+    background-color: $nxt-color-blue-light;
+  }
+
+  &::before {
+    content: '';
+    height: 1px;
+    width: 16px;
+    background-color: $nxt-color-blue-light;
+  }
+}
